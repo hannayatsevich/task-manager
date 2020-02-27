@@ -1,0 +1,168 @@
+.MonthViewNotAllowed {
+  text-align: center;
+  padding-top: 10vh;
+}
+.MonthViewNotAllowed a {
+  text-decoration: none;
+  color: #9CA684;
+}
+.MonthView{
+  display: flex;
+}
+
+@media screen and (orientation:landscape) and (min-aspect-ratio:7/5) {
+  .MonthView, .MonthViewNotAllowed {
+    font-size: 3vh;
+    min-height: 84vh;
+  }
+  .MonthViewNotAllowed {
+    font-size: 3.5vh;
+  }
+  .MonthView {
+    justify-content: space-around;
+  }
+  .MonthView .MonthViewMonth {
+    text-align: center;
+    position: sticky;
+    top: 10vh;
+    align-self: flex-start;
+    flex-basis: 23vh;
+    margin: 0vh 1vh;
+  }
+  .MonthView .MonthViewMonth  p{
+    width: 25vh;
+    margin: auto;
+  }
+  .MonthView .MonthViewMonth  select {
+    font-size: 2.7vh;
+    margin-top: 0.4vh;
+    width: 20vh;
+    height: 4.5vh;
+  }
+  .MonthView .MonthViewMonth .MonthComponent{
+    margin-top: 1vh;
+  }
+  
+  .MonthView .MonthViewTasks {
+    margin: 0.3vh 0vh;
+    flex-basis: 65vw;
+    max-width: 65vw;
+  }
+
+}
+@media screen and (orientation:landscape) and (max-aspect-ratio:7/5) {
+  .MonthView {
+    font-size: 3vh;
+    min-height: 84vh;
+  }
+  .MonthViewNotAllowed {
+    font-size: 3vh;
+  }
+  .MonthView {
+    justify-content: space-around;
+  }
+  .MonthView .MonthViewMonth {
+    text-align: center;
+    position: sticky;
+    top: 10vh;
+    align-self: flex-start;
+    flex-basis: 23vh;
+    margin: 0vh 1vh;
+  }
+  .MonthView .MonthViewMonth  p{
+    width: 25vh;
+    margin: auto;
+  }
+  .MonthView .MonthViewMonth  select {
+    font-size: 2.7vh;
+    margin-top: 0.4vh;
+    width: 20vh;
+    height: 4.5vh;
+  }
+  .MonthView .MonthViewMonth .MonthComponent{
+    margin-top: 1vh;
+  }
+  
+  .MonthView .MonthViewTasks {
+    margin: 0.3vh 0vh;
+    flex-basis: 65vw;
+    max-width: 65vw;
+  }
+  
+}
+/*Тел*/
+@media screen and (orientation:portrait) and (max-aspect-ratio:5/7){
+  .MonthView, .MonthViewNotAllowed {
+    font-size: 2.3vh;
+    min-height: 86vh;
+  }
+  .MonthView {
+    justify-content: space-around;
+  }
+  .MonthView .MonthViewMonth {
+    text-align: center;
+    position: sticky;
+    top: 10vh;
+    align-self: flex-start;
+    flex-basis: 23vh;
+    margin: 0vh 1vh;
+  }
+  .MonthView .MonthViewMonth  p{
+    width: 17vh;
+    margin: auto;
+  }
+  .MonthView .MonthViewMonth  select {
+    font-size: 2vh;
+    margin-top: 0.4vh;
+    width: 15vh;
+    height: 3vh;
+  }
+  .MonthView .MonthViewMonth .MonthComponent{
+    margin-top: 1vh;
+  }
+  
+  .MonthView .MonthViewTasks {
+    margin: 0.3vh 0vh;
+    flex-basis: 65vw;
+    max-width: 65vw;
+  }
+  
+  
+}
+@media screen and (orientation:portrait) and (min-aspect-ratio:5/7){
+  .MonthView, .MonthViewNotAllowed {
+    font-size: 2.5vh;
+    min-height: 86vh;
+  }
+  .MonthView {
+    justify-content: space-around;
+  }
+  .MonthView .MonthViewMonth {
+    text-align: center;
+    position: sticky;
+    top: 9.5vh;
+    align-self: flex-start;
+    flex-basis: 27vh;
+    margin: 0vh 1vh;
+  }
+  .MonthView .MonthViewMonth  p{
+    width: 17vh;
+    margin: auto;
+  }
+  .MonthView .MonthViewMonth  select {
+    font-size: 2vh;
+    margin-top: 0.4vh;
+    width: 15vh;
+    height: 3vh;
+  }
+  .MonthView .MonthViewMonth .MonthComponent{
+    margin-top: 1vh;
+  }
+  
+  .MonthView .MonthViewTasks {
+    margin: 0.3vh 0vh;
+    flex-basis: 75vw;
+    max-width: 75vw;
+  }
+  
+}

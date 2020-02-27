@@ -1,0 +1,188 @@
+.TaskComponent {
+  border: solid #9CA684;
+  border-width: 0.4vh;
+  text-align: center;
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.TaskComponent .TaskDate{
+  font-weight: bold;
+}
+.TaskComponent .TaskTags {
+  margin: auto;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 0.3vh solid rgb(151, 148, 148);
+}
+.EditTaskWindow {
+  border: solid 0.4vh #9CA684;
+  text-align: center;
+}
+.EditTaskWindow label{
+  margin: auto;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.EditTaskWindow label input, .EditTaskWindow label textarea{
+  margin-right: 0;
+}
+.EditTaskWindow .ErrorMsg {
+  color: red;
+}
+
+
+/*развернутый экран*/
+@media screen and (orientation:landscape) and (min-aspect-ratio:7/5) {
+  .TaskComponent {
+    margin: 3vh 1vh;
+    max-height: 100vh;
+    overflow: hidden;
+    opacity: 1;
+  }
+  .EditTaskWindow{
+    margin: 3vh 1vh;
+  }
+  #TaskComponentAnimate {
+    max-height: 0vh;
+    opacity: 0;
+    margin: 0vh 1vh;
+    border-width: 0vh;
+  }
+  .TaskComponent p, .EditTaskWindow p{
+    margin: 1vh 1vh;
+  }
+  .TaskComponent .TaskTags {
+    padding: 0.3vh;
+  }
+  .TaskComponent input[type = 'button'], .EditTaskWindow input[type = 'button'] {
+    font-size: 2vh;
+    margin: 0.3vh;
+    padding: 0.3vh;
+  }
+  .EditTaskWindow label input, .EditTaskWindow label textarea{
+    width: 80%;
+  }
+  .EditTaskWindow .ErrorMsg {
+    font-size: 2.4vh;
+  }
+  .EditTaskWindow textarea {
+    height: 20vh;
+  }
+}
+@media screen and (orientation:landscape) and (max-aspect-ratio:7/5) {
+  .TaskComponent {
+    margin: 3vh 1vh;
+    max-height: 100vh;
+    overflow: hidden;
+    opacity: 1;
+  }
+  .EditTaskWindow{
+    margin: 3vh 1vh;
+  }
+  #TaskComponentAnimate {
+    max-height: 0vh;
+    opacity: 0;
+    margin: 0vh 1vh;
+    border-width: 0vh;
+  }
+  .TaskComponent p, .EditTaskWindow p{
+    margin: 1vh 1vh;
+  }
+  .TaskComponent .TaskTags {
+    padding: 0.3vh;
+  }
+  .TaskComponent input[type = 'button'], .EditTaskWindow input[type = 'button'] {
+    font-size: 2vh;
+    margin: 0.3vh;
+    padding: 0.3vh;
+  }
+  .EditTaskWindow label input, .EditTaskWindow label textarea{
+    width: 70%;
+  }
+  .EditTaskWindow .ErrorMsg {
+    font-size: 2.4vh;
+  }
+  .EditTaskWindow textarea {
+    height: 27vh;
+  }
+}
+/*Тел*/
+@media screen and (orientation:portrait) and (max-aspect-ratio:5/7){
+  .TaskComponent {
+    margin: 3vh 1vh;
+    max-height: 100vh;
+    overflow: hidden;
+    opacity: 1;
+  }
+  .EditTaskWindow {
+    margin: 3vh 1vh;
+  }
+  #TaskComponentAnimate {
+    max-height: 0vh;
+    opacity: 0;
+    margin: 0vh 1vh;
+    border-width: 0vh;
+  }
+  .TaskComponent p, .EditTaskWindow p{
+    margin: 1vh 1vh;
+  }
+  .TaskComponent .TaskTags {
+    padding: 0.3vh;
+  }
+  .TaskComponent input[type = 'button'], .EditTaskWindow input[type = 'button'] {
+    font-size: 1.9vh;
+    margin: 0.3vh;
+    padding: 0.3vh;
+  }
+  .EditTaskWindow label input, .EditTaskWindow label textarea{
+    width: 50%;
+  }
+  .EditTaskWindow .ErrorMsg {
+    font-size: 1.8vh;
+  }
+  .EditTaskWindow textarea {
+    height: 27vh;
+  }
+}
+@media screen and (orientation:portrait) and (min-aspect-ratio:5/7){
+  .TaskComponent {
+    margin: 3vh 1vh;
+    max-height: 100vh;
+    overflow: hidden;
+    opacity: 1;
+  }
+  .EditTaskWindow {
+    margin: 3vh 1vh;
+  }
+  #TaskComponentAnimate {
+    max-height: 0vh;
+    opacity: 0;
+    margin: 0vh 1vh;
+    border-width: 0vh;
+  }
+  .TaskComponent p, .EditTaskWindow p{
+    margin: 1vh 1vh;
+  }
+  .TaskComponent .TaskTags {
+    padding: 0.3vh;
+  }
+  .TaskComponent input[type = 'button'], .EditTaskWindow input[type = 'button'] {
+    font-size: 1.9vh;
+    margin: 0.3vh;
+    padding: 0.3vh;
+  }
+  .EditTaskWindow label input, .EditTaskWindow label textarea{
+    width: 70%;
+  }
+  .EditTaskWindow .ErrorMsg {
+    font-size: 2vh;
+  }
+  .EditTaskWindow textarea {
+    height: 27vh;
+  }
+}

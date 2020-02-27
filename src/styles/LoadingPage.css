@@ -1,0 +1,9 @@
+.LoadingPage {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(250, 232, 198);
+  font-weight: bold;
+  text-align: center;
+  padding: 40vh 0vh;
+  font-size: 7vh;
+}

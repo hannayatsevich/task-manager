@@ -1,0 +1,53 @@
+/*z-index: 1000;*/
+.Footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #9CA684;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*развернутый экран*/
+@media screen and (orientation:landscape) and (min-aspect-ratio:7/5) {
+  .Footer {
+    font-size: 2.7vh;
+    height: 8vmin;
+  }
+  .Footer > p {
+    margin: 0.5vh 0.5vh;
+  }
+}
+@media screen and (orientation:landscape) and (max-aspect-ratio:7/5) {
+  .Footer {
+    font-size: 2.5vh;
+    height: 8vmin;
+  }
+  .Footer > p {
+    margin: 0.5vh 0.5vh;
+  }
+}
+/*Тел*/
+@media screen and (orientation:portrait) and (max-aspect-ratio:5/7){
+  .Footer {
+    font-size: 1.7vh;
+    height: 7vh;
+  }  
+  .Footer > p {
+    margin: 0.5vh 0.5vh;
+  }
+  
+}
+@media screen and (orientation:portrait) and (min-aspect-ratio:5/7){
+  .Footer {
+    font-size: 1.7vh;
+    height: 7vmax;
+  }
+  .Footer > p {
+    margin: 0.5vh 0.5vh;
+  }
+  
+}

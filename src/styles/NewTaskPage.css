@@ -1,0 +1,164 @@
+.NewTaskPageNotAllowed {
+  text-align: center;
+  padding-top: 10vh;
+}
+.NewTaskPageNotAllowed a {
+  text-decoration: none;
+  color: #9CA684;
+}
+.NewTaskPage{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.NewTaskWindow {  
+  display: flex;
+  flex-direction: column;
+}
+.NewTaskPage .ErrorMsg {
+  color: red;
+}
+
+
+@media screen and (orientation:landscape) and (min-aspect-ratio:7/5) {
+  
+  .NewTaskPage {
+    font-size: 3.5vh;
+    min-height: 84vh;
+  }
+  .NewTaskPageNotAllowed {
+    font-size: 3.5vh;
+  }
+  .NewTaskWindow {
+    height: 34vh;
+    padding-top: 3vh;/**/
+  }
+  .NewTaskPage  p {
+    margin: 0.5vh auto;/**/
+    width: 45vh;/**/
+  }
+  .NewTaskPage input[type = 'text'] {
+    font-size: 3vh;
+    width: 35vh;
+    height: 4vh;
+  }
+  .NewTaskPage textarea {/**/
+    font-size: 3vh;
+    width: 35vh;
+    height: 15vh;
+  }
+    
+  .NewTaskPage input[type = 'button'] {
+    font-size: 2.5vh;
+    margin: 0.5vh;
+    padding: 0.5vh;
+  }
+  .NewTaskPage .ErrorMsg {
+    font-size: 3vh;
+  }
+
+}
+@media screen and (orientation:landscape) and (max-aspect-ratio:7/5) {
+  
+  .NewTaskPage {
+    font-size: 3.5vh;
+    min-height: 84vh;
+  }
+  .NewTaskPageNotAllowed {
+    font-size: 3vh;
+  }
+  .NewTaskWindow {
+    height: 34vh;
+    padding-top: 3vh;
+  }
+  .NewTaskPage  p {
+    margin: 0.5vh auto;
+    width: 35vh;
+  }
+  .NewTaskPage input[type = 'text'] {
+    font-size: 2.5vh;
+    width: 35vh;
+    height: 4vh;
+  }
+  .NewTaskPage textarea {/**/
+    font-size: 3vh;
+    width: 35vh;
+    height: 15vh;
+  }
+  .NewTaskPage input[type = 'button'] {
+    font-size: 2vh;
+    margin: 0.3vh;
+    padding: 0.3vh;
+  }
+  .NewTaskPage .ErrorMsg {
+    font-size: 2.5vh;
+  }
+}
+/*Тел*/
+@media screen and (orientation:portrait) and (max-aspect-ratio:5/7){
+  
+  .NewTaskPage, .NewTaskPageNotAllowed {
+    font-size: 2.3vh;
+    min-height: 86vh;
+  }
+  .NewTaskWindow {
+    height: 30vh;
+    padding-top: 3vh;
+  }
+  .NewTaskPage  p {
+    margin: 0.5vh auto;
+    width: 35vh;
+  }
+  .NewTaskPage input[type = 'text'] {
+    font-size: 3vh;
+    width: 30vh;
+    height: 4vh;
+  }
+  .NewTaskPage textarea {/**/
+    font-size: 3vh;
+    width: 30vh;
+    height: 15vh;
+  }
+  .NewTaskPage input[type = 'button'] {
+    font-size: 2.5vh;
+    margin: 0.5vh;
+    padding: 0.5vh;
+  }
+  .NewTaskPage .ErrorMsg {
+    font-size: 3vh;
+  }
+  
+}
+@media screen and (orientation:portrait) and (min-aspect-ratio:5/7){
+  
+  .NewTaskPage, .NewTaskPageNotAllowed {
+    font-size: 2.5vh;
+    min-height: 86vh;
+  }
+  .NewTaskWindow {
+    height: 30vh;
+    padding-top: 3vh;
+  }
+  .NewTaskPage  p {
+    margin: 0.5vh auto;
+    width: 35vh;
+  }
+  .NewTaskPage input[type = 'text'] {
+    font-size: 3vh;
+    width: 35vh;
+    height: 4vh;
+  }
+  .NewTaskPage textarea {/**/
+    font-size: 3vh;
+    width: 35vh;
+    height: 15vh;
+  }
+  .NewTaskPage input[type = 'button'] {
+    font-size: 2.5vh;
+    margin: 0.5vh;
+    padding: 0.5vh;
+  }
+  .NewTaskPage .ErrorMsg {
+    font-size: 3vh;
+  }
+}

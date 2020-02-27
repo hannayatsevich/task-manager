@@ -1,0 +1,187 @@
+.AllTasksViewNotAllowed {
+  text-align: center;
+  padding-top: 10vh;
+}
+.AllTasksViewNotAllowed a {
+  text-decoration: none;
+  color: #9CA684;
+}
+.AllTasksView {
+  width: 100%;
+  display: flex;
+}
+.AllTasksView .ResultData .PageLinks {
+  font-weight: bold;
+  overflow: auto;
+}
+.AllTasksView .ResultData .PageLinks a {
+  text-decoration: none;
+  color: #9CA684;
+}
+.AllTasksView .ResultData .PageLinks .TasksPageLinkActive{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+/*развернутый экран*/
+@media screen and (orientation:landscape) and (min-aspect-ratio:7/5) {
+  .AllTasksView {
+    font-size: 2.8vh;
+    min-height: 84vh;
+  }
+  .AllTasksViewNotAllowed {
+    font-size: 3.5vh;
+  }
+  .AllTasksView {
+    justify-content: space-around;
+  }
+  .AllTasksView .ControlData {
+    position: sticky;
+    top: 10vh;
+    align-self: flex-start;
+    flex-basis: 30vh;
+  }
+  .AllTasksView .ControlData p {
+    padding-bottom: 0.6vh;
+  }
+  .AllTasksView .ControlData select, .AllTasksView .ControlData input[type = 'text'], .AllTasksView .ControlData input[type = 'button']{
+    width: 30vh;
+  }
+  .AllTasksView .ControlData input[type = 'checkbox']~span {
+    padding-left: 1vh;
+  }
+  .AllTasksView .ResultData {
+    margin: 2vh 0vh;
+    flex-basis: 70vw;
+    max-width: 70vw;
+  }
+  .AllTasksView .ResultData .PageLinks{
+    border: solid 0.4vh rgb(151, 148, 148);
+    margin: 0vh 1vh;
+    padding: 0.6vh;
+  }
+  .AllTasksView .ResultData .PageLinks a{
+    padding: 0.6vh;
+  }
+}
+@media screen and (orientation:landscape) and (max-aspect-ratio:7/5) {
+  .AllTasksView {
+    font-size: 2.8vh;
+    min-height: 84vh;
+  }
+  .AllTasksViewNotAllowed {
+    font-size: 3vh;
+  }
+  .AllTasksView {
+    justify-content: space-around;
+  }
+  .AllTasksView .ControlData {
+    position: sticky;
+    top: 10vh;
+    align-self: flex-start;
+    flex-basis: 20vw;
+  }
+  .AllTasksView .ControlData p {
+    padding-bottom: 0.6vh;
+  }
+  .AllTasksView .ControlData select, .AllTasksView .ControlData input[type = 'text'], .AllTasksView .ControlData input[type = 'button']{
+    width: 23vw;
+  }
+  .AllTasksView .ControlData input[type = 'checkbox']~span {
+    padding-left: 1vh;
+  }
+  .AllTasksView .ResultData {
+    margin: 2vh 0vh;
+    flex-basis: 71vw;
+    max-width: 71vw;
+  }
+  .AllTasksView .ResultData .PageLinks{
+    border: solid 0.4vh rgb(151, 148, 148);
+    margin: 0vh 1vh;
+    padding: 0.6vh;
+  }
+  .AllTasksView .ResultData .PageLinks a{
+    padding: 0.6vh;
+  }
+
+}
+/*Тел*/
+@media screen and (orientation:portrait) and (max-aspect-ratio:5/7){
+  .AllTasksView, .AllTasksViewNotAllowed {
+    font-size: 2.3vh;
+    min-height: 86vh;
+  }
+  .AllTasksView {
+    justify-content: space-around;
+  }
+  .AllTasksView .ControlData {
+    position: sticky;
+    top: 8vh;
+    align-self: flex-start;
+    flex-basis: 25vw;
+  }
+  .AllTasksView .ControlData p {
+    padding-bottom: 0.6vh;
+  }
+  .AllTasksView .ControlData select, .AllTasksView .ControlData input[type = 'text'], .AllTasksView .ControlData input[type = 'button']{
+    font-size: 1.9vh;
+    width: 25vw;
+  }
+  
+  .AllTasksView .ControlData input[type = 'checkbox']~span {
+    padding-left: 1vh;
+  }
+  .AllTasksView .ResultData {
+    margin: 1vh 0vh;
+    flex-basis: 65vw;
+    max-width: 65vw;
+  }
+  .AllTasksView .ResultData .PageLinks{
+    border: solid 0.4vh rgb(151, 148, 148);
+    margin: 0vh 1vh;
+    padding: 0.6vh;
+  }
+  .AllTasksView .ResultData .PageLinks a{
+    padding: 0.4vh;
+  }
+  
+}
+@media screen and (orientation:portrait) and (min-aspect-ratio:5/7){
+  .AllTasksView, .AllTasksViewNotAllowed {
+    font-size: 2.5vh;
+    min-height: 86vh;
+  }
+  .AllTasksView {
+    justify-content: space-around;
+  }
+  .AllTasksView .ControlData {
+    position: sticky;
+    top: 8vh;
+    align-self: flex-start;
+    flex-basis: 20vw;
+  }
+  .AllTasksView .ControlData p {
+    padding-bottom: 0.6vh;
+  }
+  .AllTasksView .ControlData select, .AllTasksView .ControlData input[type = 'text'], .AllTasksView .ControlData input[type = 'button']{
+    width: 20vw;
+  }
+  .AllTasksView .ControlData input[type = 'checkbox']~span {
+    padding-left: 1vh;
+  }
+  .AllTasksView .ResultData {
+    margin: 1vh 0vh;
+    flex-basis: 71vw;
+    max-width: 71vw;
+  }
+  .AllTasksView .ResultData .PageLinks{
+    border: solid 0.4vh rgb(151, 148, 148);
+    margin: 0vh 1vh;
+    padding: 0.6vh;
+  }
+  .AllTasksView .ResultData .PageLinks a{
+    padding: 0.4vh;
+  }
+}

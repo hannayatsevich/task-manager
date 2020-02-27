@@ -1,0 +1,45 @@
+.MainPage {  
+  width: 100%;
+  position: relative;
+  background-color: rgb(250, 232, 198);
+}
+.MainPage .PageNotFound {
+  font-weight: bold;
+  text-align: center;
+  padding: 30vh 0vh;
+  font-size: 4vh;
+}
+/*развернутый экран*/
+@media screen and (orientation:landscape) and (min-aspect-ratio:7/5) {
+  .MainPage {
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    min-height: 84vh;
+  }
+
+}
+@media screen and (orientation:landscape) and (max-aspect-ratio:7/5) {
+  .MainPage {
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    min-height: 84vh;
+  }
+
+}
+/*Тел*/
+@media screen and (orientation:portrait) and (max-aspect-ratio:5/7){
+  .MainPage {
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+    min-height: 86vh;
+  } 
+  
+}
+@media screen and (orientation:portrait) and (min-aspect-ratio:5/7){
+  .MainPage {
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+    min-height: 86vh;
+  } 
+  
+}

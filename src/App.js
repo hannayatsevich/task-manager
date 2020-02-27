@@ -1,26 +1,48 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import PropTypes from 'prop-types';
+import {BrowserRouter} from 'react-router-dom';
+import {connect} from 'react-redux';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import LoadingPage from './components/LoadingPage';
+import Header from './components/Header';
+import MainPage from './components/MainPage';
+import Footer from './components/Footer';
 
-export default App;
+import {getUsersDataThunkAC} from '../src/redux/actionCreators';
+
+class App extends React.PureComponent {
+  static propTypes = {
+    mode: PropTypes.number.isRequired,//redux - state.taskManagerUsersData.mode, 1 - загрузка, 2 - ошибка, 3 - данные получены
+    isLoggedIn: PropTypes.string,//redux - state.taskManagerUsersData.isLoggedIn.userName, //логин пользователя или null
+  };
+  
+  componentDidMount() {
+    this.props.dispatch( getUsersDataThunkAC(this.props.dispatch) );    
+  };
+  
+  render() {
+    //console.log(`App render in mode ${this.props.mode}`)
+    if (this.props.mode <= 1) 
+      return <LoadingPage mode = {this.props.mode}/>;      
+    if (this.props.mode === 2)
+      return <LoadingPage mode = {this.props.mode}/>;  
+    return (      
+      <BrowserRouter>      
+        <div className = 'TaskManager'>
+          <Header userName = {this.props.isLoggedIn}/>
+          <MainPage />
+          <Footer />          
+        </div>      
+      </BrowserRouter>           
+    );
+  };  
+};
+
+const mapStateToProps = function (state) {
+  return {
+    mode: state.taskManagerUsersData.mode,
+    isLoggedIn: state.taskManagerUsersData.isLoggedIn.userName,
+ };
+};
+
+export default connect(mapStateToProps)(App);

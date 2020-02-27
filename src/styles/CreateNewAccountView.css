@@ -1,0 +1,122 @@
+.CreateAccountView{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.CreateAccountWindow {  
+  display: flex;
+  flex-direction: column;
+}
+.CreateAccountView .ErrorMsg {
+  color: red;
+}
+
+@media screen and (orientation:landscape) and (min-aspect-ratio:7/5) {
+  .CreateAccountView {
+    font-size: 3.5vh;
+    min-height: 84vh;
+  }
+  .CreateAccountWindow {
+    height: 34vh;
+    padding-top: 10vh;
+  }
+  .CreateAccountView  p {
+    margin: 0.5vh;
+  }
+  .CreateAccountView input[type = 'text'] {
+    font-size: 3vh;
+    width: 35vh;
+    height: 4vh;
+  }
+  
+  .CreateAccountView input[type = 'button'] {
+    font-size: 2.5vh;
+    margin: 0.5vh;
+    padding: 0.5vh;
+  }
+  .CreateAccountView .ErrorMsg {
+    font-size: 3vh;
+  }
+
+}
+@media screen and (orientation:landscape) and (max-aspect-ratio:7/5) {
+  .CreateAccountView {
+    font-size: 3.5vh;
+    min-height: 84vh;
+  }
+  .CreateAccountWindow {
+    height: 34vh;
+    padding-top: 10vh;
+  }
+  .CreateAccountView  p {
+    margin: 0.5vh;
+  }
+  .CreateAccountView input[type = 'text'] {
+    font-size: 2.5vh;
+    width: 35vh;
+    height: 4vh;
+  }
+  .CreateAccountView input[type = 'button'] {
+    font-size: 2vh;
+    margin: 0.3vh;
+    padding: 0.3vh;
+  }
+  .CreateAccountView .ErrorMsg {
+    font-size: 2.5vh;
+  }
+}
+/*Тел*/
+@media screen and (orientation:portrait) and (max-aspect-ratio:5/7){
+  .CreateAccountView {
+    font-size: 3vh;
+    min-height: 86vh;
+  }
+  .CreateAccountWindow {
+    height: 30vh;
+    padding-top: 10vh;
+  }
+  .CreateAccountView  p {
+    margin: 0.5vh;
+  }
+  .CreateAccountView input[type = 'text'] {
+    font-size: 2.5vh;
+    width: 30vh;
+    height: 4vh;
+  }
+  
+  .CreateAccountView input[type = 'button'] {    
+    font-size: 2.5vh;
+    margin: 0.5vh;
+    padding: 0.5vh;
+  }
+  .CreateAccountView .ErrorMsg {
+    font-size: 3vh;
+  }
+  
+}
+@media screen and (orientation:portrait) and (min-aspect-ratio:5/7){
+  .CreateAccountView {
+    font-size: 3vh;
+    min-height: 86vh;
+  }
+  .CreateAccountWindow {
+    height: 30vh;
+    padding-top: 10vh;
+  }
+  .CreateAccountView  p {
+    margin: 0.5vh;
+  }
+  .CreateAccountView input[type = 'text'] {
+    font-size: 2.5vh;
+    width: 35vh;
+    height: 4vh;
+  }
+  .CreateAccountView input[type = 'button'] {
+    font-size: 2.5vh;
+    margin: 0.5vh;
+    padding: 0.5vh;
+  }
+  .CreateAccountView .ErrorMsg {
+    font-size: 3vh;
+  }
+}

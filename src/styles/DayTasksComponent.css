@@ -1,0 +1,118 @@
+.DayTasksComponent {
+  border: solid #9CA684;
+  border-width: 0.4vh;
+  text-align: center;
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.DayTasksComponent .TasksDate{
+  font-weight: bold;
+  margin-top: 1vh;
+}
+
+
+
+
+/*развернутый экран*/
+@media screen and (orientation:landscape) and (min-aspect-ratio:7/5) {
+  .DayTasksComponent {
+    margin: 3vh 1vh;
+    max-height: 100vh;
+    overflow: hidden;
+    opacity: 1;
+  }
+  
+  #DayTasksComponentAnimate {
+    max-height: 0vh;
+    opacity: 0;
+    margin: 0vh 1vh;
+    border-width: 0vh;
+  }
+  .DayTasksComponent p{
+    margin: 1vh 1vh;
+  }
+  
+  .DayTasksComponent input[type = 'button'] {
+    font-size: 2vh;
+    margin: 0.3vh;
+    padding: 0.3vh;
+  }
+ 
+}
+@media screen and (orientation:landscape) and (max-aspect-ratio:7/5) {
+  .DayTasksComponent {
+    margin: 3vh 1vh;
+    max-height: 100vh;
+    overflow: hidden;
+    opacity: 1;
+  }
+  
+  #DayTasksComponentAnimate {
+    max-height: 0vh;
+    opacity: 0;
+    margin: 0vh 1vh;
+    border-width: 0vh;
+  }
+  .DayTasksComponent p {
+    margin: 1vh 1vh;
+  }
+  
+  .DayTasksComponent input[type = 'button'] {
+    font-size: 2vh;
+    margin: 0.3vh;
+    padding: 0.3vh;
+  }
+  
+}
+/*Тел*/
+@media screen and (orientation:portrait) and (max-aspect-ratio:5/7){
+  .DayTasksComponent {
+    margin: 3vh 1vh;
+    max-height: 100vh;
+    overflow: hidden;
+    opacity: 1;
+  }
+  
+  #DayTasksComponentAnimate {
+    max-height: 0vh;
+    opacity: 0;
+    margin: 0vh 1vh;
+    border-width: 0vh;
+  }
+  .DayTasksComponent p {
+    margin: 1vh 1vh;
+  }
+  
+  .DayTasksComponent input[type = 'button'] {
+    font-size: 1.9vh;
+    margin: 0.3vh;
+    padding: 0.3vh;
+  }
+  
+}
+@media screen and (orientation:portrait) and (min-aspect-ratio:5/7){
+  .DayTasksComponent {
+    margin: 3vh 1vh;
+    max-height: 100vh;
+    overflow: hidden;
+    opacity: 1;
+  }
+  
+  #DayTasksComponentAnimate {
+    max-height: 0vh;
+    opacity: 0;
+    margin: 0vh 1vh;
+    border-width: 0vh;
+  }
+  .DayTasksComponent p{
+    margin: 1vh 1vh;
+  }
+  
+  .DayTasksComponent input[type = 'button'] {
+    font-size: 1.9vh;
+    margin: 0.3vh;
+    padding: 0.3vh;
+  }
+  
+}

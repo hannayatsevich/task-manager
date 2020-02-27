@@ -1,0 +1,89 @@
+/*.MonthComponent {
+  flex-basis: 25%;
+}*/
+.MonthComponent .MonthName {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.MonthComponent .CalendarTable {
+  border-collapse: collapse;/*убирает двойные рамки, border-spacing не работает в этом случае*/
+  text-align: center;
+  margin: auto;
+}
+.MonthComponent .CalendarTable tr, .MonthComponent .CalendarTable thead, .MonthComponent .CalendarTable tbody {
+  width: 100%;
+}
+.MonthComponent .CalendarTable td {
+  width: 12.5%;
+  padding: 0.5px;
+}
+.MonthComponent .CalendarTable .DateToday {
+  background-color: rgb(114, 113, 110);
+}
+.MonthComponent .CalendarTable .DateWithTask {
+  border: solid 2px #9CA684;
+}
+.MonthComponent .CalendarTable .DateChosen {
+  background-color: rgb(216, 169, 29);
+}
+
+.MonthComponent .CalendarTable .WeekNumber {
+  color: rgb(114, 113, 110);
+}
+.MonthComponent .MonthName a, .MonthComponent .CalendarTable a {
+  text-decoration: none;
+  color: black;
+}
+.MonthComponent .MonthName a:hover, .MonthComponent .CalendarTable a:hover {
+  color: #9CA684;
+}
+.MonthComponent .CalendarTable .TableHeader {
+  font-weight: bold;
+}
+
+
+/*развернутый экран*/
+@media screen and (orientation:landscape) and (min-aspect-ratio:7/5) {
+  .MonthComponent {
+    height: 20vh;
+    flex-basis: 25%;
+  }
+  .MonthComponent .CalendarTable {
+    width: 75%;
+  }
+}
+@media screen and (orientation:landscape) and (max-aspect-ratio:7/5) {
+  .MonthComponent {
+    height: 20vh;
+    flex-basis: 25%;
+  }
+  .MonthComponent .CalendarTable {
+    width: 75%;
+  }
+}
+/*Тел*/
+@media screen and (orientation:portrait) and (max-aspect-ratio:5/7){
+  .MonthComponent {
+    font-size: 2vh;
+    height: 20vh;
+    flex-basis: 45%;
+  } 
+  .MonthComponent .CalendarTable {
+    width: 100%;
+  }
+  
+  
+}
+
+@media screen and (orientation:portrait) and (min-aspect-ratio:5/7){
+  .MonthComponent {
+    width: 40vw;
+    height: 20vh;
+    flex-basis: 35%;
+  }
+  .MonthComponent .CalendarTable {
+    width: 75%;
+  }
+}
+  

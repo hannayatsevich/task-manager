@@ -1,0 +1,99 @@
+.Header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #9CA684;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1000;
+}
+.Header .MenuBtns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Header .TodayDate, .Header .AuthorizationInfo, .Header .AuthorizationBtns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center ;
+  font-weight: bold;
+  text-align: center;
+}
+.Header .TodayDate > p, .Header .AuthorizationInfo > p, .Header .AuthorizationBtns > p {
+  margin: 4px 15px;
+}
+.Header .MenuLink {
+  width: max-content;
+  display: inline-block;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  border: solid black 1.3px;
+  border-radius: 5px;
+  
+}
+
+.Header .ActiveMenuLink {  
+  color: rgb(250, 232, 198);
+  
+}
+.Header .AuthorizationInfo a, .Header .AuthorizationBtns a {
+  text-decoration: none;
+  color: black;
+}
+.Header .MenuLink:hover,.Header .AuthorizationInfo a:hover, .Header .AuthorizationBtns a:hover {
+  color: rgb(250, 232, 198);
+}
+@media screen and (orientation:landscape) and (min-aspect-ratio:7/5) {
+  .Header {
+    font-size: 2.7vh;
+    height: 8vh;
+  }
+  .Header .MenuLink {    
+    margin: 0.7vh;
+    padding: 0.7vh;
+  }
+}
+@media screen and (orientation:landscape) and (max-aspect-ratio:7/5) {
+  .Header {
+    font-size: 2.3vh;
+    height: 8vh;
+  }
+  .Header .MenuBtns {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .Header .MenuLink {    
+    padding: 0.1vh 0.7vh;
+    margin: 0.7vh;
+    padding: 0.7vh;
+  }
+}
+/*Тел*/
+@media screen and (orientation:portrait) and (max-aspect-ratio:5/7){
+  .Header {
+    font-size: 1.6vh;
+    height: 7vh;
+  }
+  .Header .MenuBtns {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .Header .MenuLink {    
+    padding: 0.1vh 0.7vh;
+    margin: 0.5vh;
+  }
+}
+@media screen and (orientation:portrait) and (min-aspect-ratio:5/7){
+  .Header {
+    font-size: 1.6vh;
+    height: 7vh;
+  }
+  .Header .MenuLink {    
+    padding: 0.2vh 0.7vh;
+    margin: 0.7vh;
+  }
+}

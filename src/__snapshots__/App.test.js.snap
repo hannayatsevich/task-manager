@@ -1,0 +1,178 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LogInView + redux render the connected component, snapshot 1`] = `
+<div
+  className="LogInView"
+>
+  <div
+    className="LogInWindow"
+  >
+    <p>
+      User Name
+    </p>
+    <p>
+      <input
+        autoFocus={true}
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+    </p>
+    <p
+      className="ErrorMsg"
+    />
+    <p>
+      User Password
+    </p>
+    <p>
+      <input
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+    </p>
+    <p
+      className="ErrorMsg"
+    />
+    <p>
+      <input
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+        value="Log in"
+      />
+      <input
+        onClick={[Function]}
+        type="button"
+        value="Cancel"
+      />
+    </p>
+  </div>
+</div>
+`;
+
+exports[`TaskComponent component task snapshot, edit task snapshot 1`] = `
+<div
+  className="TaskComponent"
+>
+  <p
+    className="TaskDate"
+  >
+    03.02.2020
+  </p>
+  <p
+    className="TaskName"
+  >
+    Smth1
+  </p>
+  <p
+    className="TaskBody"
+  >
+    Do smth1
+  </p>
+  <p
+    className="TaskTags"
+  >
+    <span
+      className="TaskTag"
+    >
+      do
+    </span>
+    <span
+      className="TaskTag"
+    >
+      smth
+    </span>
+    <span
+      className="TaskTag"
+    >
+      task
+    </span>
+  </p>
+  <p
+    className="TaskBtns"
+  >
+    <input
+      onClick={[Function]}
+      type="button"
+      value="Delete"
+    />
+    <input
+      onClick={[Function]}
+      type="button"
+      value="Edit"
+    />
+  </p>
+</div>
+`;
+
+exports[`TaskComponent component task snapshot, edit task snapshot 2`] = `
+<div
+  className="EditTaskWindow"
+>
+  <p>
+    <label>
+      Task date: 
+      <input
+        onChange={[Function]}
+        type="text"
+        value="03.02.2020"
+      />
+    </label>
+  </p>
+  <p
+    className="ErrorMsg"
+  />
+  <p>
+    <label>
+      Task name: 
+      <input
+        onChange={[Function]}
+        type="text"
+        value="Smth1"
+      />
+    </label>
+  </p>
+  <p
+    className="ErrorMsg"
+  />
+  <p>
+    <label>
+      Task body: 
+      <textarea
+        onChange={[Function]}
+        value="Do smth1"
+      />
+    </label>
+  </p>
+  <p
+    className="ErrorMsg"
+  />
+  <p>
+    <label>
+      Task tags: 
+      <input
+        onChange={[Function]}
+        type="text"
+        value="do,smth,task"
+      />
+    </label>
+  </p>
+  <p
+    className="ErrorMsg"
+  />
+  <p>
+    <input
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+      value="Edit task"
+    />
+    <input
+      onClick={[Function]}
+      type="button"
+      value="Cancel"
+    />
+  </p>
+</div>
+`;
